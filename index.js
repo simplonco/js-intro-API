@@ -5,6 +5,7 @@ const PORT = 3000;
 const app  = express();
 
 consign()
+.inlude("db.js")
 .include("models")
   .then("libs/middlewares.js")
   .then("routes")
