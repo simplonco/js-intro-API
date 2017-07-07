@@ -25,7 +25,6 @@ module.exports = app => {
       db.models[model.name] = model;
     });
     Object.keys(db.models).forEach(key => {
-      console.log(db.models);
       db.models[key].associate(db.models); // TODO: Fix l'erreur avec le npm start.
     });
   }
