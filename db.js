@@ -1,6 +1,6 @@
-import fs from "fs";
-import path from "path";
-import Sequelize from "sequelize";
+const fs        = require("fs");
+const path      = require("path");
+const Sequelize = require("sequelize");
 
 let db = null;
 
@@ -25,6 +25,7 @@ module.exports = app => {
       db.models[model.name] = model;
     });
     Object.keys(db.models).forEach(key => {
+      console.log(db.models);
       db.models[key].associate(db.models); // TODO: Fix l'erreur avec le npm start.
     });
   }
