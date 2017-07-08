@@ -45,7 +45,7 @@ module.exports = app => {
           });
         });
     })
-    .put((r eq, res) => {
+    .put((req, res) => {
       Tasks.update(req.body, {
           where: req.params
         })
