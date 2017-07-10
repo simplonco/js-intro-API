@@ -20,15 +20,4 @@ ___
  mkdir ntask-api
  cd ntask-api
  npm init
- ```
- 2. install dependencies :
-
- `npm i babel-cli babel-preset-es2015 babel-preset-stage-2 babel-register --save-dev`
-
- 3. create `.babelrc`:
-
- ```javascript
- {
-   "presets" : ["es2015", "stage-2"]
- }
-```
+ 
