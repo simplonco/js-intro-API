@@ -12,6 +12,7 @@
     "express": "^4.15.3"
   },
   "dependencies": {
+    "bcrypt": "^1.0.2",
     "body-parser": "^1.17.2",
     "consign": "^0.1.6",
     "jwt-simple": "^0.5.1",
